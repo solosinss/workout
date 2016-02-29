@@ -9,6 +9,7 @@ class Angajat
         string nume;
         string prenume;
         unsigned int varsta;
+        void schimba_nume();
     public:
         Angajat()
         {
@@ -81,15 +82,20 @@ int main()
     cout << "Nume: " <<endl;
     cin >> nume;
     a.seteazaNume(nume);
+
     cout << "Prenume: " <<endl;
     cin >> prenume;
     a.seteazaPrenume(prenume);
+
     cout << "Varsta: " <<endl;
     cin >> varsta;
     a.seteazaVarsta(varsta);
 
     a.daNume();
+    
     a.daPrenume();
+    
     a.daVarsta();
+    
     return 0;
 }
